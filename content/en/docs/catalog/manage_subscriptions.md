@@ -3,37 +3,44 @@ title: Manage subscriptions
 linkTitle: Manage subscriptions
 weight: 10
 date: 2019-12-16T00:00:00.000Z
-description: Manage AMPLIFY Catalog subscriptions.
+description: This section describes how to manage your AMPLIFY Catalog subscriptions
 ---
-
-## Subscriptions
-
-This section describes how to manage AMPLIFY Catalog subscriptions.
-
 ### Before you start
 
 * You will need to create an app in AMPLIFY Central and secure it with an API Key. See [Get started with AMPLIFY Central](/docs/central/quickstart).
 
-### View the subscriptions of an endpoint
+### View the subscriptions of an asset
 
-To view the subscriptions of an endpoint click the **Subscriptions** tab on the endpoint detail page.
+To view the subscriptions of a catalog asset, click the **Subscriptions** tab on the asset detail page. The result shows a table with the current subscriptions to the catalog asset.
 
-The result shows a table with the current subscriptions to the endpoint.
+You can also view all your subscriptions by going to 'Review Subscriptions' section in the left navigation menu.
 
-### Unsubscribe from an endpoint
 
-To unsubscribe from an endpoint:
+
+### Approve a subscription
+
+TBD
+
+### Unsubscribe from an asset
+
+To unsubscribe from an asset:
 
 * Click the **Subscriptions** tab on the endpoint detail page.
 * Click the **Gear** icon next to the subscription you want to unsubscribe to.
 * Click **Unsubscribe**.
 
-### Delete the subscription of an endpoint
+You can also unsubscribe from the 'Reivew Subscriptions' section as shown below.
+
+
+
+### Delete the subscription of an asset
 
 You can only delete subscriptions which are in `Unsubscribed` status.
 
-To delete the subscription of an endpoint:
+To delete the subscription of an asset:
 
 * Click the **Subscriptions** tab on the endpoint detail page.
 * Click the **Gear** icon next to the subscription you want to delete.
 * Click **Delete**.
+
+You can also unsubscribe from the 'Reivew Subscriptions' section as shown below.
