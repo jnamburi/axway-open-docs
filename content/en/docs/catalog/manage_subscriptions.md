@@ -42,3 +42,5 @@ To delete the subscription of an asset:
 * Click the **Subscriptions** tab on the endpoint detail page.
 * Click the **Gear** icon next to the subscription you want to delete.
 * Click **Delete**.
+
+You can also delete your subscriptions from the 'Review Subscriptions' section.
