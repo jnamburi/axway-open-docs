@@ -19,7 +19,9 @@ You can also view all your subscriptions along with the subscription history by 
 
 ### Approve a subscription
 
-TBD
+If your subscription requires manual approval instead of automatic approval, please refer to your rules before providing approval. 
+
+  
 
 ### Unsubscribe from an asset
 
