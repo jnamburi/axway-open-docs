@@ -21,7 +21,7 @@ You can also view all your subscriptions along with the subscription history by 
 
 If your subscription requires manual approval instead of automatic approval, please refer to your rules before providing approval. 
 
-Based on the use-case, once the **API Consumer** discovers the asset in the Catalog and requests access by subscribing to it, as an **API Provider** you will be notified in either in **MS Teams** or **Flow Manager**, from where you **Approve / Reject** the request.
+Based on the use-case, once the **API Consumer** discovers the asset in the Catalog and requests access by subscribing to it, as an **API Provider** you will be notified in either in **MS Teams** or **Flow Manager**, from where you **Approve / Reject** the request. As this action is performed outside of AMPLIFY Central, this section is not covered here.
 
 
 
