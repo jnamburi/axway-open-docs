@@ -15,7 +15,7 @@ Subscriptions can be used to secure access to an asset in the AMPLIFY Unified Ca
 
 Asset providers can also configure the subscription metadata that is required from consumers at the time of subscription. This can be done either when publishing the asset to the AMPLIFY Unified Catalog or after the asset has been published.
 
-{{< alert title="Note" color="primary" >}}Enabling or disabling a subscriptions is currently available only through [AMPLIFY Central CLI](https://axway-open-docs.netlify.app/docs/central/cli_central/) or AMPLIFY API.{{< /alert >}}
+{{< alert title="Note" color="primary" >}}Enabling or disabling subscriptions is currently available only through [AMPLIFY Central CLI](https://axway-open-docs.netlify.app/docs/central/cli_central/) or AMPLIFY API.{{< /alert >}}
 
 #### Subscription scope
 
@@ -34,25 +34,21 @@ A successful subscription flow looks like this:
 5. Provision access to the asset for a consumer. For API assets, this can mean generating an API Key.
 6. Subscription state is set to **active** once the provisioning is complete. At this point, the consumer can successfully use the asset.
 
-The list below outlines all possible subscription states and their meaning
+The list below outlines all possible subscription states, their respective UI labels and their meaning
 
-* **requested** - A transient state that indicates the user has submitted a subscription request and approval is required.
-* **approved** - Indicates that the subscription request was approved by the asset provider and the access to the asset is being provisioned.
-* **rejected** - Indicates that the subscription request was rejected by the asset provider.
-* **active** - Indicates the provisioning is complete and consumer can use the asset. i.e make an API call for API assets or exchange files with partner for MFT assets.
-* **failed_to_subscribe** - This state indicates there was an error during the provisioning.
-* **unsubscribe_initiated** - Indicates that the consumer has requested to unsubscribe from an asset. Asset providers can also unsubscribe consumers of their assets. At this moment, the access to the asset is being removed.
-* **unsubscribed** - Deprovisioning is complete.
-* **failed_to_unsubscribe** - This state indicates the request to unsubscribe could not be fulfilled due to an internal error.
-* **change_requested** - Indicates that a chance was submitted for a subscription. Change requests can be approved or rejected by asset providers.
-
-
+* **requested** (**REQUESTED**) - A transient state that indicates the user has submitted a subscription request and approval is required.
+* **approved** (**APPROVED**) - Indicates that the subscription request was approved by the asset provider and the access to the asset is being provisioned.
+* **rejected** (**REJECTED**) - Indicates that the subscription request was rejected by the asset provider.
+* **active** (**ACTIVE**) - Indicates the provisioning is complete and consumer can use the asset. i.e make an API call for API assets or exchange files with partner for MFT assets.
+* **failed_to_subscribe** (**FAILED_TO_SUBSCRIBE**) - This state indicates there was an error during the provisioning.
+* **unsubscribe_initiated** (**UNSUBSCRIBE_INITIATED**) - Indicates that the consumer has requested to unsubscribe from an asset. Asset providers can also unsubscribe consumers of their assets. At this moment, the access to the asset is being removed.
+* **unsubscribed** (**UNSUBSCRIBE**) - Deprovisioning is complete.
+* **failed_to_unsubscribe** (**FAILED_TO_UNSUBSCRIBE**) - This state indicates the request to unsubscribe could not be fulfilled due to an internal error.
+* **change_requested** (**CHANGE_REQUESTED**) - Indicates that a chance was submitted for a subscription. Change requests can be approved or rejected by asset providers.
 
 The transition between different subscription states can be seen in the diagram below.
 
 ![subscription state diagram](/Images/catalog/api-subscription-state-diagram.png "Subscription state diagram")
-
-
 
 ### View Subscriptions
 
@@ -86,9 +82,7 @@ Below is a screen shot.
 
 ![manual subscription](/Images/catalog/manual_subscription.png "Manual subscription")
 
-
-
-{{< alert title="Note" color="primary" >}}Only users that are assigned the Central Admin role can change the subscription approval mode.{{< /alert >}}
+{{< alert title="Note" color="primary" >}}Only users that are assigned the Central Admin, API Developer roles and Service accounts can change the subscription approval mode.{{< /alert >}}
 
 ### Approve / Reject subscriptions
 
@@ -103,7 +97,7 @@ Follow the steps below to approve a subscription:
 5. Click **Approve** or **Reject.**
 6. You can can choose to provide an optional approval message for the subscriber.
 
-{{< alert title="Note" color="primary" >}}Only users that are assigned the Central Admin role can approve or reject subscriptions.{{< /alert >}}
+{{< alert title="Note" color="primary" >}}Only users that are assigned the Central Admin role and DevOps Service accounts can approve or reject subscriptions.{{< /alert >}}
 
 ### Unsubscribe from an asset
 
