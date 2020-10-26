@@ -34,17 +34,17 @@ A successful subscription flow looks like this:
 5. Provision access to the asset for a consumer. For API assets, this can mean generating an API Key.
 6. Subscription state is set to **active** once the provisioning is complete. At this point, the consumer can successfully use the asset.
 
-The list below outlines all possible subscription states, their respective UI labels, and their meaning. Some states are internal states and hence do not have UI labels.
+The list below outlines all possible subscription states, their respective UI labels, and their meaning.
 
-* **requested** (**Waiting for approval**) - A transient state that indicates the user has submitted a subscription request and approval is required.
-* **approved** (**Subscribing**) - Indicates that the subscription request was approved by the asset provider and the access to the asset is being provisioned.
+* **requested** (**Waiting for approval...**) - A transient state that indicates the user has submitted a subscription request and approval is required.
+* **approved** (**Subscribing...**) - Indicates that the subscription request was approved by the asset provider and the access to the asset is being provisioned.
 * **rejected** (**Rejected**) - Indicates that the subscription request was rejected by the asset provider.
 * **active** (**Active**) - Indicates the provisioning is complete and consumer can use the asset. i.e make an API call for API assets or exchange files with partner for MFT assets.
-* **failed_to_subscribe** - This state indicates there was an error during the provisioning.
-* **unsubscribe_initiated** (**Unsubscribing**) - Indicates that the consumer has requested to unsubscribe from an asset. Asset providers can also unsubscribe consumers of their assets. At this moment, the access to the asset is being removed.
+* **failed_to_subscribe** (**Subscribe Failed**)- This state indicates there was an error during the provisioning.
+* **unsubscribe_initiated** (**Unsubscribing...**) - Indicates that the consumer has requested to unsubscribe from an asset. Asset providers can also unsubscribe consumers of their assets. At this moment, the access to the asset is being removed.
 * **unsubscribed** (**Unsubscribed**) - Deprovisioning is complete.
-* **failed_to_unsubscribe** - This state indicates the request to unsubscribe could not be fulfilled due to an internal error.
-* **change_requested** - Indicates that a chance was submitted for a subscription. Change requests can be approved or rejected by asset providers.
+* **failed_to_unsubscribe** (**Unsubscribe Failed**) - This state indicates the request to unsubscribe could not be fulfilled due to an internal error.
+* **change_requested** (**Change Requested**) - Indicates that a chance was submitted for a subscription. Change requests can be approved or rejected by asset providers.
 
 The transition between different subscription states can be seen in the diagram below.
 
@@ -77,6 +77,8 @@ Follow these steps to enable manual approvals:
 3. From the **Ellipsis** button, select *Edit*.
 4. Select **Manual** in the Subscription approval drop-down.
 5. Click **Update** to save your changes.
+
+Please be aware, if the catalog asset has been created manually via CLI or imported via agents, there is a risk of overriding changes via UI approvals.
 
 Below is a screen shot.
 
