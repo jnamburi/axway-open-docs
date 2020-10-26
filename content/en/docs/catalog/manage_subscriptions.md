@@ -56,7 +56,7 @@ To view the historical transition of a subscription request:
 
 1. Select **Subscriptions** in the left navigation bar in AMPLIFY Central.
 2. Use the top filter drop-down to filter the subscription by their status.
-3. Select a subscription. This will bring up the subscription details screen. 
+3. Select a subscription. This will bring up the subscription details screen.
 4. Click on the **History** tab. Here you can see the historical activity on a subscription request.
 
 Watch a quick animation to view your subscription history.
@@ -101,13 +101,9 @@ Follow the steps below to approve a subscription:
 
 {{< alert title="Note" color="primary" >}}Only users that are assigned the Central Admin role and DevOps Service accounts can approve or reject subscriptions.{{< /alert >}}
 
-
-
 Watch a quick animation to approve a subscription
 
 ![approve subscription](/Images/catalog/approved_subscription.gif "Approve subscription")
-
-
 
 ### Unsubscribe from an asset
 
