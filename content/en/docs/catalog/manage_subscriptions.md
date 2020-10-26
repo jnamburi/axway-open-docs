@@ -101,6 +101,14 @@ Follow the steps below to approve a subscription:
 
 {{< alert title="Note" color="primary" >}}Only users that are assigned the Central Admin role and DevOps Service accounts can approve or reject subscriptions.{{< /alert >}}
 
+
+
+Watch a quick animation to approve a subscription
+
+![approve subscription](/Images/catalog/approved_subscription.gif "Approve subscription")
+
+
+
 ### Unsubscribe from an asset
 
 To unsubscribe from an asset:
