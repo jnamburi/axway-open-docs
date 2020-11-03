@@ -63,7 +63,7 @@ Watch a quick animation to view your subscription history.
 
 ![view subscriptions](/Images/catalog/view_subscriptions.gif "view subscriptions")
 
-### Enable manual subscriptions
+### Enable manual approvals
 
 As an asset provider, you can configure how subscription requests will be approved. There are two modes supported:
 
@@ -123,3 +123,8 @@ Deleting a subscription will remove it from the system. You can only delete subs
 Watch this quick animation to delete your subscription.
 
 ![delete subscription](/Images/catalog/delete_subscription.gif "Delete subscription")
+
+### Further information
+
+* [Manage subscription workflow for V7 Manager](https://docs.axway.com/bundle/axway-open-docs/page/docs/central/connect-api-manager/subscription-for-the-consumer/index.html)
+* [Manage subscription workflow for AWS](https://docs.axway.com/bundle/axway-open-docs/page/docs/central/connect-aws-gateway/subscription-for-the-consumer/index.html)
